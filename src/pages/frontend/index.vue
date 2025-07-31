@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-<h1>这是首页</h1>
+<div  @click="$router.push('/login')">登录</div>
 </template>
 <style scoped>
 </style>
