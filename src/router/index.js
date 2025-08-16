@@ -1,23 +1,37 @@
 import Index from '@/pages/frontend/index.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Login  from '@/pages/admin/Login.vue'
-
+import Admin from '@/layouts/admin/admin.vue'
+import AdminIndex from '@/pages/admin/Index.vue'
 // 统一在这里声明所有路由
 const routes = [
+    // {
+    //     path: '/', // 路由地址
+    //     component: Index, // 对应组件
+    //     meta: { // meta 信息
+    //         title: 'Weblog 首页' // 页面标题
+    //     }
+    // },
     {
-        path: '/', // 路由地址
-        component: Index, // 对应组件
-        meta: { // meta 信息
-            title: 'Weblog 首页' // 页面标题
-        }
+        path:'/admin',
+        component:Admin,
+        children:[
+            {
+                path: "/admin/index",
+                component: AdminIndex, // 主内容区域，具体需要渲染的页面
+                meta: {
+                    title: 'Admin 后台首页'
+                }
+            }
+        ]
+
     },
-    {
-        path:'/login',
-        component:Login,
-        meta:{
-            title:"登录页"
-        }
-    }
+    // {
+        // path:'/login',
+        // component:Login,
+        // meta:{
+        //     title:"登录页"
+        // }
+    // }
 ]
 
 // 创建路由
