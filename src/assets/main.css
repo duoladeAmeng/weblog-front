@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: -apple-system-font,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial,sans-serif;
   color: #4c4e4d;
@@ -9,4 +10,5 @@ body {
   background: #f4f4f4;
   /* background-color: aqua; */
   line-height: 1.6;
+
 }

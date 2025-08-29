@@ -7,7 +7,9 @@ import AdminTagList from './components/AdminTagList.vue';
 
 <template>
     <el-container>
-        <el-aside> <AdminMenu></AdminMenu> </el-aside>
+        <el-aside>
+          <AdminMenu></AdminMenu>
+        </el-aside>
         <el-container>
              <!-- 顶栏容器 -->
             <el-header>
@@ -27,6 +29,9 @@ import AdminTagList from './components/AdminTagList.vue';
         </el-container>
     </el-container>
 </template>
-<style>
+<style scoped>
+    .el-header{
+        padding: 0;
+    }
 
 </style>
